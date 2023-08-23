@@ -15,4 +15,7 @@ export const mainConfig: Configuration = {
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json'],
   },
+  externals: {
+    '@temporalio/worker': 'commonjs @temporalio/worker'
+  }
 };
